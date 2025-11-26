@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* Counts for sums 2..12 */
+/* Mulige summer 2 terninger kan slå */
 int to = 0;
 int tre = 0;
 int fire = 0;
@@ -20,7 +20,8 @@ int Terning1;
 int Terning2;
 
 /*
- * Kører 50.000 terningkast (to terninger) og tæller forekomsten af summen.
+ * Kører 50.000 terningkast (to terninger) og tæller hvor mange gange
+ hver sum kan forekomme.
  */
 void slag(void) {
      /* seed random */
@@ -69,7 +70,7 @@ void slag(void) {
         }
     }
 
-    /* Udskriv resultater */
+    /* Udskriv resultater af summer */
     printf("Resultater efter 50000 kast:\n");
     printf(" 2: %d\n", to);
     printf(" 3: %d\n", tre);
@@ -91,4 +92,5 @@ int main(void) {
     return 0;
 }
      
+
 
